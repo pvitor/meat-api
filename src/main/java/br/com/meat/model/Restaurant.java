@@ -13,12 +13,14 @@ import org.hibernate.annotations.GenericGenerator;
 public class Restaurant {
 	
 	@Id
+	//dev
 	//@GeneratedValue(strategy = GenerationType.IDENTITY)
+	//prod
 	@GeneratedValue(generator = "increment")
 	@GenericGenerator(name = "increment", strategy = "increment")
 	private Long id;
 	
-	private String idRestaurante;
+	private String idRestaurant;
 	
 	private String name;
 	
@@ -80,14 +82,13 @@ public class Restaurant {
 	public void setImagePath(String imagePath) {
 		this.imagePath = imagePath;
 	}	
-	
 
-	public String getIdRestaurante() {
-		return idRestaurante;
+	public String getIdRestaurant() {
+		return idRestaurant;
 	}
 
-	public void setIdRestaurante(String idRestaurante) {
-		this.idRestaurante = idRestaurante;
+	public void setIdRestaurant(String idRestaurant) {
+		this.idRestaurant = idRestaurant;
 	}
 
 	@Override
