@@ -32,6 +32,10 @@ public class Restaurant {
 	
 	private String imagePath;
 	
+	private String hours;
+	
+	private String about;
+	
 	
 	
 
@@ -89,6 +93,22 @@ public class Restaurant {
 
 	public void setIdRestaurant(String idRestaurant) {
 		this.idRestaurant = idRestaurant;
+	}	
+
+	public String getHours() {
+		return hours;
+	}
+
+	public void setHours(String hours) {
+		this.hours = hours;
+	}
+
+	public String getAbout() {
+		return about;
+	}
+
+	public void setAbout(String about) {
+		this.about = about;
 	}
 
 	@Override

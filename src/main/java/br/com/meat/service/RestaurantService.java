@@ -18,5 +18,9 @@ public class RestaurantService {
 	public List<Restaurant> findAll(){
 		return restaurantRepository.findAll();
 	}
+	
+	public Restaurant findById(String idRestaurant) {
+		return restaurantRepository.findByIdRestaurant(idRestaurant);
+	}
 
 }
